@@ -18,11 +18,8 @@ export UUID='fd80f56e-93f3-4c85-b2a8-c77216c509a7'
 export VPATH='vls' #vless路径
 export MPATH='vms' #vmess路径
 export CF_IP='ip.sb'
-export SUB_NAME='bbn'
+export SUB_NAME='waifly'
 #=======================================
-# 启动玩具原程序，把原游戏文件改名ts3srever,默认关闭，需要开启只需去掉export前面#号即可.
-# 注意原游戏启动后，不显示节点日志
-# Teamspeak3-server、bedrock、start.sh,run.sh等可以直接改启动文件的玩具都可以类似修改
 export FLIE_PATH='/tmp/worlds/'#下载文件保存路径
 
 rm -rf /home/container/tmp/*
