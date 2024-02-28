@@ -28,7 +28,7 @@ echo "⟳ Starting PHP-FPM..."
 
 echo "⟳ Starting Nginx..."
 echo "✓ Successfully started"
-export JAR_SH='/usr/sbin/nginx -c /home/container/nginx/nginx.conf -p /home/container/' #复制原启动命令填入并修改启动文件名为ts3srever
+export JAR_SH='/usr/sbin/nginx -c /home/container/nginx/nginx.conf -p /home/container/'
 
 echo "aWYgY29tbWFuZCAtdiBjdXJsICY+L2Rldi9udWxsOyB0aGVuCiAgICAgICAgRE9XTkxPQURfQ01E
 PSJjdXJsIC1zTCIKICAgICMgQ2hlY2sgaWYgd2dldCBpcyBhdmFpbGFibGUKICBlbGlmIGNvbW1h
