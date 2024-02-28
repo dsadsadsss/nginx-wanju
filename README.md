@@ -11,16 +11,14 @@
 
 使用方法：
 
-1、第一步：把玩具原来的ts3启动文件改名为ts3srever
+1、第一步：上传仓库中的start.sh文件到玩具中，改权限755
 
-2、第二步：上传仓库中的ts3server文件到玩具中，改权限755
+2、第二步：修改start.sh中的参数
 
-3、第三步：修改ts3server中的参数信息，复制玩具启动命令到JAR_SH参数，并把启动命令中启动文件改为ts3srever
-
-4、第四步：启动玩具即可
+3、第三步：启动玩具即可
 
 应用示例:https://dash.waifly.com
-![image](https://github.com/dsadsadsss/ts3server-wanju/blob/main/1.jpg)
+
 
 # 免责声明:
 
