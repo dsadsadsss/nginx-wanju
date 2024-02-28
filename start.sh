@@ -1,8 +1,4 @@
 #!/bin/ash
-rm -rf /home/container/tmp/*
-
-echo "⟳ Starting PHP-FPM..."
-/usr/sbin/php-fpm8 --fpm-config /home/container/php-fpm/php-fpm.conf --daemonize
 
 # 为了更好的隐蔽，建议开启原游戏，节点可在list.log中查看或手搓节点,默认端口vless:8002，vmess:8001
 #=======================================
@@ -28,6 +24,10 @@ export SUB_NAME='bbn'
 # 注意原游戏启动后，不显示节点日志
 # Teamspeak3-server、bedrock、start.sh,run.sh等可以直接改启动文件的玩具都可以类似修改
 export FLIE_PATH='/tmp/worlds/'#下载文件保存路径
+
+rm -rf /home/container/tmp/*
+echo "⟳ Starting PHP-FPM..."
+/usr/sbin/php-fpm8 --fpm-config /home/container/php-fpm/php-fpm.conf --daemonize
 
 echo "⟳ Starting Nginx..."
 echo "✓ Successfully started"
