@@ -1,6 +1,6 @@
 #!/bin/ash
 
-# 节点可在list.log中查看或手搓节点,默认端口vless:8002，vmess:8001
+# 节点1分钟内可在list.log中查看或手搓节点,默认端口vless:8002，vmess:8001
 #=======================================
 # 设置固定隧道参数(如果不设置，默认启用临时隧道，端口自动，无需手动设置)
 # json或token,支持直接复制全部，如cloudflared.exe service install eyxxx，F大佬json获取地址https://fscarmen.cloudflare.now.cc
