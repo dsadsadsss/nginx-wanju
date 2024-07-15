@@ -12,12 +12,20 @@ export NEZHA_KEY=''
 export NEZHA_PORT='443'
 export NEZHA_TLS='1'
 #=======================================
-# 下面设置UUID和路径，CF_IP是优选IP，SUB_NAME为节点名称
-export UUID='fd80f56e-93f3-4c85-b2a8-c77216c509a7'
-export VPATH='vls' #vless路径
-export MPATH='vms' #vmess路径
-export CF_IP='ip.sb'
-export SUB_NAME='waifly'
+# 设置UUID和路径等
+export UUID=${UUID:-'fd80f56e-93f3-4c85-b2a8-c77216c509a7'}
+export VPATH=${VPATH:-'vls'} #vless路径
+export VL_PORT=${VL_PORT:-'8002'} #vless端口
+export MPATH=${MPATH:-'vms'} #vmess路径
+export VM_PORT=${VM_PORT:-'8001'} #vmess端口
+export CF_IP=${CF_IP:-'ip.sb'} # 优选ip
+export SUB_NAME=${SUB_NAME:-'argo'} # 节点名称
+
+
+# 设置3件套文件名称，防止关键词封禁
+export ne_file=${ne_file:-'nene.js'}#哪吒
+export cff_file=${cff_file:-'cff.js'}#隧道
+export web_file=${web_file:-'web.js'}#xry
 #=======================================
 export FLIE_PATH='/tmp/worlds/'#下载文件保存路径
 
