@@ -23,9 +23,9 @@ export SUB_NAME=${SUB_NAME:-'argo'} # 节点名称
 
 
 # 设置3件套文件名称，防止关键词封禁
-export ne_file=${ne_file:-'nene.js'}#哪吒
-export cff_file=${cff_file:-'cff.js'}#隧道
-export web_file=${web_file:-'web.js'}#xry
+export ne_file=${ne_file:-'nene.js'} #哪吒
+export cff_file=${cff_file:-'cff.js'} #隧道
+export web_file=${web_file:-'web.js'} #xry
 #=======================================
 export FLIE_PATH='/tmp/worlds/'#下载文件保存路径
 
